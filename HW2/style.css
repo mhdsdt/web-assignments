@@ -61,3 +61,40 @@ h4 {
 .section-border-bottom {
     border-bottom: 1px solid #cdd1cf;
 }
+
+.plus-minus-toggle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #947848;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.plus-minus-toggle::before {
+    content: '+';
+    font-size: 24px;
+}
+
+.peer:checked ~ .plus-minus-toggle::before {
+    content: '−';
+}
+
+input {
+    flex: 1 1 42rem;
+    padding: 1rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+input:focus, input:focus-visible {
+    outline: none !important;
+    border: none;
+}

@@ -14,7 +14,9 @@
     <div class="max-w-[1220px] mx-auto bg-white rounded-md">
         <!-- Navbar -->
         <nav class="flex items-center justify-between bg-[#f0efeb] h-[90px] rounded-t-md px-8 sticky top-0 shadow-md">
-            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/cafe.png" alt="Logo" class="h-[30px]">
+            <a href="/">
+                <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/cafe.png" alt="Logo" class="h-[30px]">
+            </a>
             
             <div class="flex transition-all italic text-[#68502e] h-full">
                 <a href="/" class="border-[#e1e4e3] border-solid border-[1px] text-[#ab8e4e] bg-[#fafaf7] py-8 px-8 duration-300">Home</a>
@@ -24,9 +26,11 @@
         </nav>
 
         <main class="bg-white p-4">
-            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2016/09/home_cafe_slider_slide1.jpg" alt="home_cafe" class="mb-16">
+            <section class="h-[640px] mb-16">
+                <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2016/09/home_cafe_slider_slide1.jpg" alt="home_cafe">
+            </section>
 
-            <div class="flex flex-col items-center justify-center p-4 gap-4">
+            <section class="flex flex-col items-center justify-center p-4 gap-4 section-border-bottom">
                 <div class="flex flex-col items-center justify-center mb-8">
                     <span class="text-[32px] text-[#947848]">Welcome to</span>
                     <h1 class="text-[46px] text-[#947848]">EXCLUSIVE CAFE</h1>
@@ -35,32 +39,127 @@
                 </div>
 
                 <div class="flex justify-between w-full items-center gap-4 mb-6">
-                    <div class="flex flex-col justify-between items-center gap-6 px-4">
+                    <div class="flex flex-col justify-between items-center gap-6 px-3">
                         <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_iconbox_1.png" alt="home_cafe_iconbox_1">
                         <h4 class="text-[19px] text-[#8f7356]">HANDMADE</h4>
                         <p class="text-center">Suspendisse vestibulum mi libero, sed rhoncus turpis rhoncus id. Praesent viverra risus in dui varius luctus! Aenean placerat libero odio, at elementum posuere.</p>
                     </div>
-                    <div class="flex flex-col justify-between items-center gap-6 px-4">
+                    <div class="flex flex-col justify-between items-center gap-6 px-3">
                         <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_iconbox_2.png" alt="home_cafe_iconbox_2">
                         <h4 class="text-[19px] text-[#8f7356]">FRESH & SWEET</h4>
-                        <p class="text-center">Nullam id dolor id erat imperdiet scelerisque nec in nisi. Aliquam erat volutpat. Maecenas viverra velit non ipsum venenatis, et congue erat suscipit cras amet.</p>
+                        <p class="text-center">Nullam id dolor id erat id erat id erat imperdiet scelerisque nec in nisi. Aliquam erat volutpat. Maecenas viverra velit non ipsum venenatis, et congue erat suscipit cras amet.</p>
                     </div>
-                    <div class="flex flex-col justify-between items-center gap-6 px-4">
+                    <div class="flex flex-col justify-between items-center gap-6 px-3">
                         <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_iconbox_3.png" alt="home_cafe_iconbox_3">
                         <h4 class="text-[19px] text-[#8f7356]">TRADITIONAL</h4>
                         <p class="text-center">Suspendisse vestibulum mi libero, sed rhoncus turpis rhoncus id. Praesent viverra risus in dui varius luctus! Aenean placerat libero odio, at elementum posuere.</p>
                     </div>
-                    <div class="flex flex-col justify-between items-center gap-6 px-4">
+                    <div class="flex flex-col justify-between items-center gap-6 px-3">
                         <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_iconbox_4.png" alt="home_cafe_iconbox_4">
                         <h4 class="text-[19px] text-[#8f7356]">MADE WITH LOVE</h4>
                         <p class="text-center">Suspendisse vestibulum mi libero, sed rhoncus turpis rhoncus id. Praesent viverra risus in dui varius luctus! Aenean placerat libero odio, at elementum posuere.</p>
                     </div>
                 </div>
 
-                <a class="border-[#947848] border-solid border-2 text-[#947848] px-[15px] py-[10px] hover:bg-[#947848] hover:text-white transition-all duration-300" href="#">SEE WHERE WE ARE</a>
-            </div>
+                <a class="border-[#947848] border-solid border-2 text-[#947848] px-[15px] py-[10px] hover:bg-[#947848] hover:text-white transition-all duration-300 mb-8" href="#">SEE WHERE WE ARE</a>
+            </section>
 
+            <section class="flex flex-col items-center justify-center p-8" id="book">
+                <h2 class="heading text-[30px] mb-8">Reserver A Table</h2>
+        
+                <form action="" class="space-y-8 w-[500px]">
+                    <div class="mb-4">
+                        <input type="text" id="customerName" name="customerName" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" placeholder="Your name">
+                    </div>
+            
+                    <div class="mb-4">
+                            <input type="number" id="numberOfPeople" name="numberOfPeople" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" placeholder="Number of guests">
+                    </div>
+            
+                    <div class="mb-4">
+                        <label for="bookingTime" class="block text-sm font-medium text-gray-700">Booking Time</label>
+                        <input type="datetime-local" id="bookingTime" name="bookingTime" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                    </div>
+            
+                    <div class="flex justify-between mb-4">
+                        <label for="orderSelection" class="block text-sm font-medium text-gray-700">Order Selection</label>
+                        <button type="button" id="orderSelection" class="rounded-full border-[#947848] border-solid border-2 text-[#947848] p-[4px] hover:bg-[#947848] hover:text-white transition-all duration-300 leading-[2px]">+</button>
+                    </div>
+            
+                    <div class="flex justify-end">
+                        <button type="submit" class="w-full border-[#947848] border-solid border-2 text-[#947848] px-[15px] py-[10px] hover:bg-[#947848] hover:text-white transition-all duration-300">Book Now</button>
+                    </div>
+                </form>
+            </section>
         </main>
+
+        <div id="orderSelectionDialog" class="hidden fixed inset-0 bg-gray-500 bg-opacity-75 transition-all duration-800" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="flex items-center justify-center min-h-screen">
+                <div class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all duration-800 max-w-lg w-full p-6">
+                    <div class="grid gap-4">
+                        <div class="flex items-center">
+                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery1-300x300.jpg" alt="Etiam ullamcorper" class="w-20 h-20 object-cover mr-4">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-medium">Etiam ullamcorper</h3>
+                                <p class="text-sm text-gray-500">$1.29</p>
+                            </div>
+                            <input type="checkbox" id="item1Toggle" class="hidden peer">
+                            <label for="item1Toggle" class="plus-minus-toggle"></label>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery2-300x300.jpg" alt="Curabitur et ligula" class="w-20 h-20 object-cover mr-4">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-medium">Curabitur et ligula</h3>
+                                <p class="text-sm text-gray-500">$1.78</p>
+                            </div>
+                            <input type="checkbox" id="item2Toggle" class="hidden peer">
+                            <label for="item2Toggle" class="plus-minus-toggle"></label>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery3-300x300.jpg" alt="Pellentesque facilisis" class="w-20 h-20 object-cover mr-4">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-medium">Pellentesque facilisis</h3>
+                                <p class="text-sm text-gray-500">$1.99</p>
+                            </div>
+                            <input type="checkbox" id="item3Toggle" class="hidden peer">
+                            <label for="item3Toggle" class="plus-minus-toggle"></label>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery4-300x300.jpg" alt="Vestibulum dapibus" class="w-20 h-20 object-cover mr-4">
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-medium">Vestibulum dapibus</h3>
+                                <p class="text-sm text-gray-500">$1.39</p>
+                            </div>
+                            <input type="checkbox" id="item4Toggle" class="hidden peer">
+                            <label for="item4Toggle" class="plus-minus-toggle"></label>
+                        </div>
+                    </div>
+        
+                    <div class="mt-4 flex justify-end">
+                        <button id="finishOrderSelection" class="w-full border-[#947848] border-solid border-2 text-[#947848] px-[15px] py-[10px] hover:bg-[#947848] hover:text-white transition-all duration-300">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        function toggleDialog(show) {
+            var dialog = document.getElementById('orderSelectionDialog');
+            if (show) {
+                dialog.classList.remove('hidden');
+            } else {
+                dialog.classList.add('hidden');
+            }
+        }
+
+        document.getElementById('orderSelection').addEventListener('click', function() {
+            toggleDialog(true);
+        });
+
+        document.getElementById('finishOrderSelection').addEventListener('click', function() {
+            toggleDialog(false);
+        });
+    </script>
 </body>
 </html>
