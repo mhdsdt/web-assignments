@@ -3,141 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.3.5/src/css/preflight.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Coffee</title>
 </head>
-<body class="bg-[#ebebeb] p-8 transition-all">
-    <div class="max-w-[1220px] mx-auto bg-white rounded-md">
+<body class="layout">
+    <div class="wrapper">
         <!-- Navbar -->
-        <nav class="flex items-center justify-between bg-[#f0efeb] h-[90px] rounded-t-md px-8 sticky top-0 shadow-md">
+        <nav class="nav-bar">
             <a href="/">
-                <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/cafe.png" alt="Logo" class="h-[30px]">
+                <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/cafe.png" alt="Logo" style="height: 30px;">
             </a>
             
-            <div class="flex transition-all italic text-[#68502e] h-full">
-                <a href="/" class="border-[#e1e4e3] border-solid border-[1px] text-[#ab8e4e] bg-[#fafaf7] py-8 px-8 duration-300">Home</a>
-                <a href="/menu.html" class="border-[#e1e4e3] border-solid border-[1px] hover:text-[#ab8e4e] hover:bg-[#fafaf7] py-8 px-8 duration-300">Menu</a>
-                <a href="/gallery.html" class="border-[#e1e4e3] border-solid border-[1px] hover:text-[#ab8e4e] hover:bg-[#fafaf7] py-8 px-8 duration-300">Gallery</a>
+            <div class="nav-bar-menu">
+                <a href="/" class="active-nav-bar-menu-btn">Home</a>
+                <a href="/menu.html" class="nav-bar-menu-btn">Menu</a>
+                <a href="/gallery.html" class="nav-bar-menu-btn">Gallery</a>
             </div>
         </nav>
 
-        <main class="bg-white p-4">
-            <section class="h-[640px] mb-16">
+        <main style="background-color: white; padding: 1rem;">
+            <section style="height: 640px; margin-bottom: 4rem;">
                 <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2016/09/home_cafe_slider_slide1.jpg" alt="home_cafe">
             </section>
 
-            <section class="flex flex-col items-center justify-center p-4 gap-4 section-border-bottom">
-                <div class="flex flex-col items-center justify-center mb-8">
-                    <span class="text-[32px] text-[#947848]">Welcome to</span>
-                    <h1 class="text-[46px] text-[#947848]">EXCLUSIVE CAFE</h1>
-                    <p class="text-center max-w-[360px]">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+            <section class="about-section-container">
+                <div class="about-section__header">
+                    <span style="font-size: 32px; color: #947848;">Welcome to</span>
+                    <h1 style="font-size: 46px; color: #947848;">EXCLUSIVE CAFE</h1>
+                    <p style="text-align: center; max-width: 360px;">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
                         Morbi accuam nectellus</p>
                 </div>
 
-                <div class="flex justify-between w-full items-center gap-4 mb-6">
-                    <div class="flex flex-col justify-between items-center gap-6 px-3">
+                <div class="about-section__items">
+                    <div class="about-section__item">
                         <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_iconbox_1.png" alt="home_cafe_iconbox_1">
-                        <h4 class="text-[19px] text-[#8f7356]">HANDMADE</h4>
-                        <p class="text-center">Suspendisse vestibulum mi libero, sed rhoncus turpis rhoncus id. Praesent viverra risus in dui varius luctus! Aenean placerat libero odio, at elementum posuere.</p>
+                        <h4 class="about-section__item-title">HANDMADE</h4>
+                        <p style="text-align: center;">Suspendisse vestibulum mi libero, sed rhoncus turpis rhoncus id. Praesent viverra risus in dui varius luctus! Aenean placerat libero odio, at elementum posuere.</p>
                     </div>
-                    <div class="flex flex-col justify-between items-center gap-6 px-3">
+                    <div class="about-section__item">
                         <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_iconbox_2.png" alt="home_cafe_iconbox_2">
-                        <h4 class="text-[19px] text-[#8f7356]">FRESH & SWEET</h4>
-                        <p class="text-center">Nullam id dolor id erat id erat id erat imperdiet scelerisque nec in nisi. Aliquam erat volutpat. Maecenas viverra velit non ipsum venenatis, et congue erat suscipit cras amet.</p>
+                        <h4 class="about-section__item-title">FRESH & SWEET</h4>
+                        <p style="text-align: center;">Nullam id dolor id erat id erat id erat imperdiet scelerisque nec in nisi. Aliquam erat volutpat. Maecenas viverra velit non ipsum venenatis, et congue erat suscipit cras amet.</p>
                     </div>
-                    <div class="flex flex-col justify-between items-center gap-6 px-3">
+                    <div class="about-section__item">
                         <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_iconbox_3.png" alt="home_cafe_iconbox_3">
-                        <h4 class="text-[19px] text-[#8f7356]">TRADITIONAL</h4>
-                        <p class="text-center">Suspendisse vestibulum mi libero, sed rhoncus turpis rhoncus id. Praesent viverra risus in dui varius luctus! Aenean placerat libero odio, at elementum posuere.</p>
+                        <h4 class="about-section__item-title">TRADITIONAL</h4>
+                        <p style="text-align: center;">Suspendisse vestibulum mi libero, sed rhoncus turpis rhoncus id. Praesent viverra risus in dui varius luctus! Aenean placerat libero odio, at elementum posuere.</p>
                     </div>
-                    <div class="flex flex-col justify-between items-center gap-6 px-3">
+                    <div class="about-section__item">
                         <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_iconbox_4.png" alt="home_cafe_iconbox_4">
-                        <h4 class="text-[19px] text-[#8f7356]">MADE WITH LOVE</h4>
-                        <p class="text-center">Suspendisse vestibulum mi libero, sed rhoncus turpis rhoncus id. Praesent viverra risus in dui varius luctus! Aenean placerat libero odio, at elementum posuere.</p>
+                        <h4 class="about-section__item-title">MADE WITH LOVE</h4>
+                        <p style="text-align: center;">Suspendisse vestibulum mi libero, sed rhoncus turpis rhoncus id. Praesent viverra risus in dui varius luctus! Aenean placerat libero odio, at elementum posuere.</p>
                     </div>
                 </div>
 
-                <a class="border-[#947848] border-solid border-2 text-[#947848] px-[15px] py-[10px] hover:bg-[#947848] hover:text-white transition-all duration-300 mb-8" href="#">SEE WHERE WE ARE</a>
+                <a class="btn" style="margin-bottom: 2rem;" href="#">SEE WHERE WE ARE</a>
             </section>
 
-            <section class="flex flex-col items-center justify-center p-8" id="book">
-                <h2 class="heading text-[30px] mb-8">Reserver A Table</h2>
+            <section class="book-section__container" id="book">
+                <h2 class="book-section__title">Reserve A Table</h2>
         
-                <form action="" class="space-y-8 w-[500px]">
-                    <div class="mb-4">
-                        <input type="text" id="customerName" name="customerName" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" placeholder="Your name">
+                <form action="" class="book-section__form">
+                    <div style="margin-bottom: 1rem;">
+                        <input type="text" id="customerName" name="customerName" class="input" placeholder="Your name">
                     </div>
             
-                    <div class="mb-4">
-                            <input type="number" id="numberOfPeople" name="numberOfPeople" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" placeholder="Number of guests">
+                    <div style="margin-bottom: 1rem;">
+                            <input type="number" id="numberOfPeople" name="numberOfPeople" class="input" placeholder="Number of guests">
                     </div>
             
-                    <div class="mb-4">
-                        <label for="bookingTime" class="block text-sm font-medium text-gray-700">Booking Time</label>
-                        <input type="datetime-local" id="bookingTime" name="bookingTime" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="bookingTime" class="input-label" style="margin-top: 2rem;">Booking Time</label>
+                        <input type="datetime-local" id="bookingTime" name="bookingTime" class="input">
                     </div>
             
-                    <div class="flex justify-between mb-4">
-                        <label for="orderSelection" class="block text-sm font-medium text-gray-700">Order Selection</label>
-                        <button type="button" id="orderSelection" class="rounded-full border-[#947848] border-solid border-2 text-[#947848] p-[4px] hover:bg-[#947848] hover:text-white transition-all duration-300 leading-[2px]">+</button>
+                    <div style="display:flex; justify-content: space-between; margin-top: 2rem; margin-bottom: 2rem;">
+                        <label for="orderSelection" class="input-label">Order Selection</label>
+                        <button type="button" id="orderSelection" class="plus-btn">+</button>
                     </div>
             
-                    <div class="flex justify-end">
-                        <button type="submit" class="w-full border-[#947848] border-solid border-2 text-[#947848] px-[15px] py-[10px] hover:bg-[#947848] hover:text-white transition-all duration-300">Book Now</button>
+                    <div style="display:flex; justify-content: end;">
+                        <button type="submit" class="btn" style="width: 100%;">Book Now</button>
                     </div>
                 </form>
             </section>
         </main>
 
-        <div id="orderSelectionDialog" class="hidden fixed inset-0 bg-gray-500 bg-opacity-75 transition-all duration-800" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <div class="flex items-center justify-center min-h-screen">
-                <div class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all duration-800 max-w-lg w-full p-6">
-                    <div class="grid gap-4">
-                        <div class="flex items-center">
-                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery1-300x300.jpg" alt="Etiam ullamcorper" class="w-20 h-20 object-cover mr-4">
-                            <div class="flex-grow">
-                                <h3 class="text-lg font-medium">Etiam ullamcorper</h3>
-                                <p class="text-sm text-gray-500">$1.29</p>
+        <div id="orderSelectionDialog" class="dialog__overlay" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="dialog__wrapper">
+                <div class="dialog__card">
+                    <div style="display: grid; gap: 1rem;">
+                        <div class="dialog__item">
+                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery1-300x300.jpg" alt="Etiam ullamcorper" class="dialog__item-image">
+                            <div style="flex-grow: 1;">
+                                <h3 class="dialog__item-title">Etiam ullamcorper</h3>
+                                <p class="dialog__item-price">$1.29</p>
                             </div>
-                            <input type="checkbox" id="item1Toggle" class="hidden peer">
+                            <input type="checkbox" id="item1Toggle" class="peer" style="display: none;">
                             <label for="item1Toggle" class="plus-minus-toggle"></label>
                         </div>
-                        <div class="flex items-center">
-                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery2-300x300.jpg" alt="Curabitur et ligula" class="w-20 h-20 object-cover mr-4">
-                            <div class="flex-grow">
-                                <h3 class="text-lg font-medium">Curabitur et ligula</h3>
-                                <p class="text-sm text-gray-500">$1.78</p>
+                        <div class="dialog__item">
+                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery2-300x300.jpg" alt="Curabitur et ligula" class="dialog__item-image">
+                            <div style="flex-grow: 1;">
+                                <h3 class="dialog__item-title">Curabitur et ligula</h3>
+                                <p class="dialog__item-price">$1.78</p>
                             </div>
-                            <input type="checkbox" id="item2Toggle" class="hidden peer">
+                            <input type="checkbox" id="item2Toggle" class="peer" style="display: none;">
                             <label for="item2Toggle" class="plus-minus-toggle"></label>
                         </div>
-                        <div class="flex items-center">
-                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery3-300x300.jpg" alt="Pellentesque facilisis" class="w-20 h-20 object-cover mr-4">
-                            <div class="flex-grow">
-                                <h3 class="text-lg font-medium">Pellentesque facilisis</h3>
-                                <p class="text-sm text-gray-500">$1.99</p>
+                        <div class="dialog__item">
+                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery3-300x300.jpg" alt="Pellentesque facilisis" class="dialog__item-image">
+                            <div style="flex-grow: 1;">
+                                <h3 class="dialog__item-title">Pellentesque facilisis</h3>
+                                <p class="dialog__item-price">$1.99</p>
                             </div>
-                            <input type="checkbox" id="item3Toggle" class="hidden peer">
+                            <input type="checkbox" id="item3Toggle" class="peer" style="display: none;">
                             <label for="item3Toggle" class="plus-minus-toggle"></label>
                         </div>
-                        <div class="flex items-center">
-                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery4-300x300.jpg" alt="Vestibulum dapibus" class="w-20 h-20 object-cover mr-4">
-                            <div class="flex-grow">
-                                <h3 class="text-lg font-medium">Vestibulum dapibus</h3>
-                                <p class="text-sm text-gray-500">$1.39</p>
+                        <div class="dialog__item">
+                            <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/home_cafe_gallery4-300x300.jpg" alt="Vestibulum dapibus" class="dialog__item-image">
+                            <div style="flex-grow: 1;">
+                                <h3 class="dialog__item-title">Vestibulum dapibus</h3>
+                                <p class="dialog__item-price">$1.39</p>
                             </div>
-                            <input type="checkbox" id="item4Toggle" class="hidden peer">
+                            <input type="checkbox" id="item4Toggle" class="peer" style="display: none;">
                             <label for="item4Toggle" class="plus-minus-toggle"></label>
                         </div>
                     </div>
         
-                    <div class="mt-4 flex justify-end">
-                        <button id="finishOrderSelection" class="w-full border-[#947848] border-solid border-2 text-[#947848] px-[15px] py-[10px] hover:bg-[#947848] hover:text-white transition-all duration-300">Close</button>
-                    </div>
+                    <button id="finishOrderSelection" class="btn" style="width: 100%; margin-top: 1rem;">Close</button>
                 </div>
             </div>
         </div>
@@ -147,9 +145,9 @@
         function toggleDialog(show) {
             var dialog = document.getElementById('orderSelectionDialog');
             if (show) {
-                dialog.classList.remove('hidden');
+                dialog.style.display = 'initial';
             } else {
-                dialog.classList.add('hidden');
+                dialog.style.display = 'none';
             }
         }
 
