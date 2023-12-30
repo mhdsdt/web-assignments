@@ -11,8 +11,18 @@ services:
 
   django_server:
     build: ./django
-    # TODO PART 1
+    deploy:
+      replicas: ${DJANGO_REPLICAS}
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 50M
 
   go_server:
     build: ./go
-    # TODO PART 2
+    deploy:
+      replicas: ${GO_REPLICAS}
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 50M
