@@ -5,4 +5,4 @@ class WebsiteUser(HttpUser):
 
     @task
     def load_django(self):
-        self.client.get("/api/?n=2&k=4")
+        self.client.get("/api/?n=4&k=0")
