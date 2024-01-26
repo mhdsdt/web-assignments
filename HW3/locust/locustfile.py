@@ -1,12 +1,8 @@
-from locust import HttpUser, between, task
+from locust import HttpUser, task, between
 
-class UserBehavior(HttpUser):
+class WebsiteUser(HttpUser):
     wait_time = between(1, 5)
 
-    @task(1)
+    @task
     def load_django(self):
-        self.client.get("http://django_backend")
-
-    @task(1)
-    def load_go(self):
-        self.client.get("http://go_backend")
+        self.client.get("/api/?n=2&k=4")
